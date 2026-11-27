@@ -1,0 +1,51 @@
+name: Feature request
+description: Suggest an improvement or a new capability for the website.
+title: "[Request]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the need behind the request. This helps decide whether and how it fits the site.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to be able to do?
+      description: Describe the problem or need this request would address.
+      placeholder: When I..., it is difficult to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: What change do you have in mind?
+      description: Describe how the website could help.
+      placeholder: It would help if the site...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Who would this help, and when?
+      description: Share a real example or workflow where this would be useful.
+      placeholder: When I visit..., I want to..., so I can...
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Other approaches
+      description: Have you tried another way to solve this? Add details if useful.
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Examples or references
+      description: Add links, sketches, or screenshots that clarify the request.
+    validations:
+      required: false

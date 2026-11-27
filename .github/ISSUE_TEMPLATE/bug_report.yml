@@ -1,0 +1,63 @@
+name: Bug report
+description: Report something that is not working on the website.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report one problem per issue. Search existing issues first to avoid duplicates.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What went wrong?
+      description: Describe what you saw and what you expected to happen.
+      placeholder: The page shows... I expected...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps someone can follow to see the problem.
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. See the problem...
+    validations:
+      required: true
+
+  - type: input
+    id: page_url
+    attributes:
+      label: Page URL
+      description: Paste the URL of the page where the problem happened, if available.
+      placeholder: https://example.com/page
+    validations:
+      required: false
+
+  - type: input
+    id: browser_device
+    attributes:
+      label: Browser and device
+      description: Include the browser, operating system, and device if they may matter.
+      placeholder: Firefox on Windows 11, laptop
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Attach an image or recording if it helps explain the problem.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Anything else
+      description: Add relevant details, links, or console errors.
+    validations:
+      required: false
